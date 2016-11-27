@@ -1,0 +1,14 @@
+args==0.1.0
+click==6.6
+clint==0.5.1
+Flask==0.11.1
+gitdb2==2.0.0
+GitPython==2.1.0
+itsdangerous==0.24
+Jinja2==2.8
+legit==0.2.0
+MarkupSafe==0.23
+requests==2.12.1
+six==1.10.0
+smmap2==2.0.1
+Werkzeug==0.11.11

@@ -1,0 +1,19 @@
+<html>
+   <head>
+       <title>Mappy</title>
+   </head>
+   <body>
+       <div id="container">
+           <div class="title">
+               <h1>Mappy: Find your map</h1>
+           </div>
+           <div id="content">
+               <form method="post" action="{{ url_for('search') }}">
+                 <label for="yourplace">Donde est&aacute;s:</label>
+                 <input type="text" name="place"/><br/>
+                 <input type="submit" value="Ala!"/>
+               </form>
+           </div>
+       </div>
+   </body>
+</html>

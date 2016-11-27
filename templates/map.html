@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your map</title>
+</head>
+<body>
+    <h1>Tu mapa para...</h1>
+
+    <div id="map" style="width:80%;height:400px">
+    </div>
+    <script type="text/javascript">
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng({{latitude|tojson|safe}}, {{longitude|tojson|safe}}),
+                zoom: 13
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+<html>
