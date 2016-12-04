@@ -1,3 +1,4 @@
+# -*- coding: utf8 -*-
 from flask import Flask, request, redirect, url_for, render_template
 import requests
 app = Flask(__name__)
@@ -22,7 +23,7 @@ def search():
 def map(): # :param string
     place = request.args.get('place', None)
     data = api_call(place)
-    return render_template('map.html', latitude=data[0], longitude=data[1])
+    return render_template('map.html', place=place, latitude=data[0], longitude=data[1])
 
 def api_call(place): # :param string
     base_url = "http://maps.google.com/maps/api/geocode/json?address="
